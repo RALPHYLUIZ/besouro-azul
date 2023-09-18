@@ -69,8 +69,9 @@ main{
     width: 530px;
     font-size: 1.5rem;
     color: #FFF;
-
-
+}
+.descricao p{
+    text-align: center;
 }
 
 .trailers{
@@ -78,16 +79,8 @@ main{
     display: flex;
     gap: 32px;
 }
-
-.social-container{
-    width: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    font-size: 32px;
-    color: #FFF;
+.trailers img{
+    width: 500px;
 }
 
 .social-container i:hover{
@@ -101,4 +94,34 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* TABLET */
+@media (max-width:768px){
+    body{
+    padding-top: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-image: url(./img/background-Tablet.png)
+    }
+    .social-container{
+        display: none;
+    }
+    .trailers{
+        flex-direction: column;
+    }
+    .trailers a:nth-child(3){
+        display: none;
+    }
+    .filme-container{
+        align-items: center;
+    }
+    .descricao{
+        padding: 60px;
+        justify-content: flex-start;
+        flex-grow: 0;
+    }
+    footer{
+        display: none;
+    };
 }
